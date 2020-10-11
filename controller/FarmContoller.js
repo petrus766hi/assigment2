@@ -16,7 +16,7 @@ class FarmContoller {
         })
         .catch(err =>{
             res.status (500).json ({
-                msg: 'Failed Register',
+                msg: 'Failed Create',
                 detail: err,
               });
         })
@@ -69,7 +69,7 @@ class FarmContoller {
         })
         .catch(err =>{
             res.status (500).json ({
-                msg: 'Failed Get',
+                msg: 'Failed Update',
                 detail: err,
               });
         })

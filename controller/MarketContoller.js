@@ -16,7 +16,7 @@ class MarketContoller {
         })
         .catch(err =>{
             res.status (500).json ({
-                msg: 'Failed Register',
+                msg: 'Failed Create',
                 detail: err,
               });
         })
@@ -70,7 +70,7 @@ class MarketContoller {
         })
         .catch(err =>{
             res.status (500).json ({
-                msg: 'Failed Get',
+                msg: 'Failed Update',
                 detail: err,
               });
         })
@@ -104,7 +104,7 @@ class MarketContoller {
         })
 
         .catch((err)=>{
-            console.log(err)
+            res.status(500).json({msg: "Failed", data: err })
         })
     }
 }

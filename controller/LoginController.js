@@ -10,7 +10,7 @@ class LoginUser {
           )
           res.json (user);
         } catch (err) {
-          res.json (err);
+          res.status(500).json(err)
         }
     }
     static async getAllUser(req, res){
@@ -20,7 +20,7 @@ class LoginUser {
           )
           res.json (user);
         } catch (err) {
-          res.json (err);
+          res.status(500).json(err)
         }
     }
     static async updateUser (req, res){
