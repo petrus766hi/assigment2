@@ -36,6 +36,7 @@ class AttackController{
             }
           } else {
             res.status(400).json('USER_NOT_FOUND');
+
           }
         })
         .then((attackerResult) => {
@@ -71,7 +72,7 @@ class AttackController{
           });
         })
         .catch((err) =>{
-          res.status(400).json({msg: "Failed", data: err})
+          res.status(500).json({msg: "Failed", data: err})
         });
 
     }

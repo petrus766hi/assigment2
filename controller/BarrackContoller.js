@@ -16,7 +16,7 @@ class BarrackContoller {
         })
         .catch(err =>{
             res.status (500).json ({
-                msg: 'Failed Register',
+                msg: 'Failed Create',
                 detail: err,
               });
         })
@@ -104,7 +104,7 @@ class BarrackContoller {
         })
 
         .catch((err)=>{
-            res.status(400).json({msg: "Failed", data: err })
+            res.status(500).json({msg: "Failed", data: err })
         })
     }
 }
